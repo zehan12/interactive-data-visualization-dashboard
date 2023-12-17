@@ -1,10 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard"
+
 function App() {
 
   return (
     <>
-      <div>
-        <h1 className="text-4xl text-center p-4">Interactive Data Visualization Dashboard</h1>
-      </div>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/login" element={<h1>Login</h1>} />
+      </Routes>
     </>
   )
 }
